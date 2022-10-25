@@ -1,0 +1,16 @@
+kind: ImageStream
+apiVersion: image.uccp.io/v1
+spec:
+  tags:
+  - name: cloud-credential-operator
+    from:
+      kind: DockerImage
+      Name: quay.io/openshift/origin-cloud-credential-operator
+  - name: aws-pod-identity-webhook
+    from:
+      kind: DockerImage
+      Name: quay.io/openshift/aws-pod-identity-webhook
+  - name: kube-rbac-proxy
+    from:
+      kind: DockerImage
+      name: quay.io/openshift/origin-kube-rbac-proxy:latest

@@ -1,0 +1,11 @@
+apiVersion: config.uccp.io/v1
+kind: ClusterOperator
+metadata:
+  name: cloud-credential
+  annotations:
+    exclude.release.uccp.io/internal-uccp-hosted: "true"
+    include.release.uccp.io/self-managed-high-availability: "true"
+status:
+  versions:
+  - name: operator
+    version: "0.0.1-snapshot"

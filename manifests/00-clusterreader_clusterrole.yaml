@@ -1,0 +1,18 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: system:uccp:cloud-credential-operator:cluster-reader
+  labels:
+    rbac.authorization.k8s.io/aggregate-to-cluster-reader: "true"
+  annotations:
+    include.release.uccp.io/ibm-cloud-managed: "true"
+    include.release.uccp.io/self-managed-high-availability: "true"
+rules:
+- apiGroups:
+  - cloudcredential.uccp.io
+  resources:
+  - credentialsrequests
+  verbs:
+  - get
+  - list
+  - watch

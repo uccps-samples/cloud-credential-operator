@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    config.uccp.io/inject-trusted-cabundle: "true"
+  name: cco-trusted-ca
+  namespace: uccp-cloud-credential-operator
+  annotations:
+    include.release.uccp.io/ibm-cloud-managed: "true"
+    include.release.uccp.io/self-managed-high-availability: "true"

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    include.release.uccp.io/ibm-cloud-managed: "true"
+    include.release.uccp.io/self-managed-high-availability: "true"
+    uccp.io/node-selector: ""
+    workload.uccp.io/allowed: "management"
+  labels:
+    uccp.io/cluster-monitoring: "true"
+  name: uccp-cloud-credential-operator
