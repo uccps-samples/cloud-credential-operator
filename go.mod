@@ -33,7 +33,7 @@ require (
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.0
-	github.com/uccps-samples/api v0.0.0-20221025020716-187981fa688c
+	github.com/uccps-samples/api v0.0.0-20221025033333-c0b1087c9984
 	github.com/uccps-samples/build-machinery-go v0.0.0-20221024073655-3930cec85ae1
 	github.com/uccps-samples/library-go v0.0.0-20221025021912-5a8f5fc3479f
 	go.mongodb.org/mongo-driver v1.7.1 // indirect

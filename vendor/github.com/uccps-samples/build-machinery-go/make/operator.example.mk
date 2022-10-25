@@ -15,8 +15,8 @@ include ./operator.mk
 
 
 # Codegen module needs setting these required variables
-CODEGEN_OUTPUT_PACKAGE :=github.com/uccps-samples/cluster-uccp-apiserver-operator/pkg/generated
-CODEGEN_API_PACKAGE :=github.com/uccps-samples/cluster-uccp-apiserver-operator/pkg/apis
+CODEGEN_OUTPUT_PACKAGE :=github.com/uccps-samples/cluster-openshift-apiserver-operator/pkg/generated
+CODEGEN_API_PACKAGE :=github.com/uccps-samples/cluster-openshift-apiserver-operator/pkg/apis
 CODEGEN_GROUPS_VERSION :=openshiftapiserver:v1alpha1
 # You can list all codegen related variables by:
 #   $ make -n --print-data-base | grep ^CODEGEN
@@ -27,7 +27,7 @@ CODEGEN_GROUPS_VERSION :=openshiftapiserver:v1alpha1
 # $3 - Dockerfile path
 # $4 - context
 # It will generate target "image-$(1)" for builing the image an binding it as a prerequisite to target "images".
-$(call build-image,ocp-uccp-apiserver-operator,registry.svc.ci.openshift.org/ocp/4.2:uccp-apiserver-operator,./Dockerfile.rhel,.)
+$(call build-image,ocp-openshift-apiserver-operator,registry.svc.ci.openshift.org/ocp/4.2:openshift-apiserver-operator,./Dockerfile.rhel,.)
 
 # This will call a macro called "add-bindata" which will generate bindata specific targets based on the parameters:
 # $0 - macro name

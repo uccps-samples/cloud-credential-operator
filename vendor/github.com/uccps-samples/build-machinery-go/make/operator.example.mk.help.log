@@ -9,7 +9,7 @@ ensure-imagebuilder
 ensure-yaml-patch
 ensure-yq
 help
-image-ocp-uccp-apiserver-operator
+image-ocp-openshift-apiserver-operator
 images
 telepresence
 test

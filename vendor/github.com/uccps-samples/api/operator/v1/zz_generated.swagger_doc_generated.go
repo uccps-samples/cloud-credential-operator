@@ -1100,8 +1100,8 @@ func (OVNKubernetesConfig) SwaggerDoc() map[string]string {
 	return map_OVNKubernetesConfig
 }
 
-var map_UccpSDNConfig = map[string]string{
-	"":                       "UccpSDNConfig configures the three uccp-sdn plugins",
+var map_OpenShiftSDNConfig = map[string]string{
+	"":                       "OpenShiftSDNConfig configures the three uccp-sdn plugins",
 	"mode":                   "mode is one of \"Multitenant\", \"Subnet\", or \"NetworkPolicy\"",
 	"vxlanPort":              "vxlanPort is the port to use for all vxlan packets. The default is 4789.",
 	"mtu":                    "mtu is the mtu to use for the tunnel interface. Defaults to 1450 if unset. This must be 50 bytes smaller than the machine's uplink.",
@@ -1109,8 +1109,8 @@ var map_UccpSDNConfig = map[string]string{
 	"enableUnidling":         "enableUnidling controls whether or not the service proxy will support idling and unidling of services. By default, unidling is enabled.",
 }
 
-func (UccpSDNConfig) SwaggerDoc() map[string]string {
-	return map_UccpSDNConfig
+func (OpenShiftSDNConfig) SwaggerDoc() map[string]string {
+	return map_OpenShiftSDNConfig
 }
 
 var map_PolicyAuditConfig = map[string]string{
@@ -1197,48 +1197,48 @@ func (StaticIPAMRoutes) SwaggerDoc() map[string]string {
 	return map_StaticIPAMRoutes
 }
 
-var map_UccpAPIServer = map[string]string{
-	"":       "UccpAPIServer provides information to configure an operator to manage uccp-apiserver.\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
+var map_OpenShiftAPIServer = map[string]string{
+	"":       "OpenShiftAPIServer provides information to configure an operator to manage uccp-apiserver.\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
 	"spec":   "spec is the specification of the desired behavior of the Uccp API Server.",
-	"status": "status defines the observed status of the Uccp API Server.",
+	"status": "status defines the observed status of the OpenShift API Server.",
 }
 
-func (UccpAPIServer) SwaggerDoc() map[string]string {
-	return map_UccpAPIServer
+func (OpenShiftAPIServer) SwaggerDoc() map[string]string {
+	return map_OpenShiftAPIServer
 }
 
-var map_UccpAPIServerList = map[string]string{
-	"":      "UccpAPIServerList is a collection of items\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
+var map_OpenShiftAPIServerList = map[string]string{
+	"":      "OpenShiftAPIServerList is a collection of items\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
 	"items": "Items contains the items",
 }
 
-func (UccpAPIServerList) SwaggerDoc() map[string]string {
-	return map_UccpAPIServerList
+func (OpenShiftAPIServerList) SwaggerDoc() map[string]string {
+	return map_OpenShiftAPIServerList
 }
 
-var map_UccpAPIServerStatus = map[string]string{
+var map_OpenShiftAPIServerStatus = map[string]string{
 	"latestAvailableRevision": "latestAvailableRevision is the latest revision used as suffix of revisioned secrets like encryption-config. A new revision causes a new deployment of pods.",
 }
 
-func (UccpAPIServerStatus) SwaggerDoc() map[string]string {
-	return map_UccpAPIServerStatus
+func (OpenShiftAPIServerStatus) SwaggerDoc() map[string]string {
+	return map_OpenShiftAPIServerStatus
 }
 
-var map_UccpControllerManager = map[string]string{
-	"": "UccpControllerManager provides information to configure an operator to manage uccp-controller-manager.\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
+var map_OpenShiftControllerManager = map[string]string{
+	"": "OpenShiftControllerManager provides information to configure an operator to manage uccp-controller-manager.\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
 }
 
-func (UccpControllerManager) SwaggerDoc() map[string]string {
-	return map_UccpControllerManager
+func (OpenShiftControllerManager) SwaggerDoc() map[string]string {
+	return map_OpenShiftControllerManager
 }
 
-var map_UccpControllerManagerList = map[string]string{
-	"":      "UccpControllerManagerList is a collection of items\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
+var map_OpenShiftControllerManagerList = map[string]string{
+	"":      "OpenShiftControllerManagerList is a collection of items\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
 	"items": "Items contains the items",
 }
 
-func (UccpControllerManagerList) SwaggerDoc() map[string]string {
-	return map_UccpControllerManagerList
+func (OpenShiftControllerManagerList) SwaggerDoc() map[string]string {
+	return map_OpenShiftControllerManagerList
 }
 
 var map_KubeScheduler = map[string]string{

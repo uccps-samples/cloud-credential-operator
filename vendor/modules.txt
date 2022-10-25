@@ -343,7 +343,7 @@ github.com/spf13/pflag
 ## explicit; go 1.13
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/require
-# github.com/uccps-samples/api v0.0.0-20221025020716-187981fa688c
+# github.com/uccps-samples/api v0.0.0-20221025033333-c0b1087c9984
 ## explicit; go 1.16
 github.com/uccps-samples/api
 github.com/uccps-samples/api/apiserver
